@@ -5,7 +5,10 @@ function Header() {
         <>
             <h1>hello worlddđ</h1>
             <h2>Second commit</h2>
-            <h1>conflict ở đâyyayyy</h1>
+            <h1>remote  repo</h1>
+
+            <h1>conflict here</h1>
+
         </>
     );
 }
