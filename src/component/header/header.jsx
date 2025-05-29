@@ -4,6 +4,7 @@ function Header() {
     return (
         <>
             <h1>hello world</h1>
+            <h2>Second commit</h2>
         </>
     );
 }
