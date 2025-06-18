@@ -19,7 +19,7 @@ function Header() {
                 <div className={style.User}>
                     <a href=""><i class="fa-regular fa-circle-user"></i></a>
                 </div>
-
+                <a href="/login">Đăng kí</a>
             </header>
         </>
     );
