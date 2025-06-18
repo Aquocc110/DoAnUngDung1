@@ -20,6 +20,8 @@ function Header() {
                     <a href=""><i class="fa-regular fa-circle-user"></i></a>
                 </div>
                 <a href="/login">Đăng kí</a>
+                <a href="/login">Đăng kí 2</a>
+
             </header>
         </>
     );
