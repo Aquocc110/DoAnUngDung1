@@ -108,23 +108,7 @@ GO
 
 INSERT INTO GhiChu_ChuDe (MaGhiChu, MaChuDe) VALUES
   (1, 1),
-  (3, 2);
+  (3, 2);    
 GO
 
 
-SELECT MaND, TenDN, MatKhau
-FROM NguoiDung
-WHERE TenDN = N'duy' AND MatKhau = N'123456';
-GO
-
-DECLARE @MaGhiChu INT = 1;
-
-SELECT 
-    G.MaGhiChu,
-    NMa.MaNhan,
-    NMa.TenNhan
-FROM GhiChu_Nhan GCN
-JOIN Nhan NMa 
-  ON GCN.MaNhan = NMa.MaNhan
-WHERE GCN.MaGhiChu = @MaGhiChu;
-GO
