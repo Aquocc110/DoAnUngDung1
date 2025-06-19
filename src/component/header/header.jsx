@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import logo from '../../photo/keep_2020q4_48dp.png'
 import style from '../header/header.module.css'
 import { Outlet, Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
-function Header() {  
-    const [menuOpen, setMenuOpen] = useState(false);
-    const location = useLocation();
+
+function Header() {
+
     return (
-     
+
         <>
             <header>
                 <div className={style.iconBars} >

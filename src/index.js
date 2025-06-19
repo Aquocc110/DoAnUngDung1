@@ -3,24 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SigninPage from './component/pages/Sign_in/Sign_in';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    
-    <Routes>
-      <Route path='/' element={<App />}></Route>
-      <Route path='Sign_in' element={<SigninPage />}></Route>
-      
+      <Routes>
+        <Route path="/" element={<App />}>
 
-    </Routes>
-    </BrowserRouter>    
+          <Route path="Sign_in" element={<SigninPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
-
 
 reportWebVitals();
