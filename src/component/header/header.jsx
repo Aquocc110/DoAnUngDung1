@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import logo from '../../photo/keep_2020q4_48dp.png'
 import style from '../header/header.module.css'
-function Header() {
+import { Outlet, Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+function Header() {  
+    const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
     return (
+     
         <>
             <header>
                 <div className={style.iconBars} >
@@ -20,7 +25,7 @@ function Header() {
                     <a href=""><i class="fa-regular fa-circle-user"></i></a>
                 </div>
                 <a href="/login">Đăng kí</a>
-                <a href="/login">Đăng kí 2</a>
+                <Link to="/Sign_in">duy gay</Link>
 
             </header>
         </>
