@@ -24,6 +24,7 @@ function Header() {
                     <a href=""><i class="fa-regular fa-circle-user"></i></a>
                 </div>
                 <a href="/login">Đăng kí</a>
+                <h1> gì cũng t</h1>
                 <Link to="/Sign_in">duy gay</Link>
 
             </header>
