@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-
 import logo from '../../photo/keep_2020q4_48dp.png';
 import style from '../header/header.module.css';
 import { Link } from "react-router-dom";
@@ -11,7 +10,6 @@ function Header() {
     return saved === "true"; 
     });
 
-    
     const [selectedMenu, setSelectedMenu] = useState(null);
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -38,11 +36,10 @@ function Header() {
      localStorage.setItem("darkMode", darkMode);
 }, [darkMode]);
 
-
-
     return (
         <>
             <header className={style.header}>
+                
                 <div className={style.iconBars}>
                     <a href="#"><i className="fa-solid fa-bars"></i></a>
                 </div>
@@ -55,7 +52,13 @@ function Header() {
                 </div>
 
                 <div className={style.timKiem}>
-                    <a href="#"><i className="fa-solid fa-magnifying-glass"></i></a>
+                    <div>
+                            <form action="" method="GET" className="style.formSearch">
+                            <i className="fa-solid fa-magnifying-glass"></i>
+                            <input className={style.input} type="text" placeholder="Tìm kiếm" name="tukhoa"/>
+                            </form>                                           
+                    </div>
+                    
                 </div>
 
                 <div className={style.User}>
