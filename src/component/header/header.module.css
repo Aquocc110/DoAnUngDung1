@@ -2,8 +2,10 @@ header {
     margin-top: 2px;
     justify-content: space-between;
     display: flex;
-    align-items: center;
+    align-items:center;
     padding: 10px;
+    border-bottom: 1px solid rgb(148, 143, 143);
+    
 }
 
 a {
@@ -17,13 +19,13 @@ a {
 }
 .logo .ghiChu {
     color: rgb(0, 0, 0);
-
 }
 
 .logo {
-    margin-right: 900px;
+    margin-right: auto;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .logo a {
@@ -41,21 +43,51 @@ a {
     font-size: 40px;
 }
 
-.timKiem i {
-    color: #616366;
-    font-size: 24px;
+.timKiem {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-right: 600px;
+  
 }
+
+.timKiem i{
+    padding-right: 10px;
+}
+
+.formSearch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  
+}
+
+.input {
+  background-color: #dcdbdb;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 10px;
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  width: 400px;
+}
+
 
 .User i {
     font-size: 24px;
     color: #616366;
+    padding-right: 30px;
 }
 
-/* === Dropdown Menu Cài đặt (menu xổ xuống) === */
+/* Dropdown Menu Cài đặt (menu xổ xuống)  */
 
 .settingWrapper {
     position: relative;
     display: inline-block;
+    
 }
 
 .settingBtn {
@@ -64,11 +96,12 @@ a {
     font-size: 24px;
     color: #616366;
     cursor: pointer;
+    padding-right: 30px;
 }
 
 .dropdownMenu {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 40px;
     background-color: white;
     border: 1px solid #ccc;
@@ -89,18 +122,22 @@ a {
 .dropdownMenu div:hover {
     background-color: #f2f2f2;
 }
+
+/* Chỉnh sáng tối */
+
 :global(body.dark-theme) {
     background-color: #121212;
     color: #ffffff;
+    transition: 0.5s;
 }
 
 :global(body.dark-theme) header {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e;  
 }
 
 :global(body.dark-theme) .dropdownMenu {
     background-color: #2c2c2c;
-    color: #fff;
+    color: #fff; 
 }
 
 :global(body.dark-theme) .dropdownMenu div:hover {
@@ -124,4 +161,6 @@ a {
 :global(body.dark-theme) .iconBars i{
     color:white 
 }
-
+:global(body) {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
