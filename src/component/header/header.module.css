@@ -4,16 +4,26 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
 }
 
 .chuLogo {
     font-size: 40px;
     color: #616366;
 }
+.logo .ghiChu {
+    color: rgb(0, 0, 0);
+
+}
 
 .logo {
     margin-right: 900px;
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
@@ -21,7 +31,6 @@ header {
     font-size: 24px;
     text-decoration: none;
 }
-
 
 .hinhLogo {
     width: 60px;
@@ -42,8 +51,77 @@ header {
     color: #616366;
 }
 
-/* 
+/* === Dropdown Menu Cài đặt (menu xổ xuống) === */
 
+.settingWrapper {
+    position: relative;
+    display: inline-block;
+}
 
+.settingBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #616366;
+    cursor: pointer;
+}
 
-*/
+.dropdownMenu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 1000;
+    min-width: 160px;
+    padding: 8px 0;
+}
+
+.dropdownMenu div {
+    padding: 10px 16px;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+}
+
+.dropdownMenu div:hover {
+    background-color: #f2f2f2;
+}
+:global(body.dark-theme) {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+:global(body.dark-theme) header {
+    background-color: #1e1e1e;
+}
+
+:global(body.dark-theme) .dropdownMenu {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+:global(body.dark-theme) .dropdownMenu div:hover {
+    background-color: #3a3a3a;
+}
+:global(body.dark-theme) .settingBtn{
+    color: white;
+}
+:global(body.dark-theme) .dropdownMenu div{
+    color: #ffffff;
+}
+:global(body.dark-theme) .timKiem i{
+    color: white;
+}
+:global(body.dark-theme) .User i{
+    color:white 
+}
+:global(body.dark-theme) .ghiChu{
+    color:white 
+}
+:global(body.dark-theme) .iconBars i{
+    color:white 
+}
+

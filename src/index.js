@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SigninPage from './component/pages/Sign_in/Sign_in';
+import Help from './component/pages/help/help';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
         <Route path="/" element={<App />}>
 
           <Route path="Sign_in" element={<SigninPage />} />
+           <Route path="tro-giup" element={<Help />} /> 
         </Route>
       </Routes>
     </BrowserRouter>
