@@ -43,7 +43,6 @@ a {
     color: #616366;
     font-size: 40px;
 }
-
 .timKiem {
   background-color: #ffffff;
   border-radius: 10px;
@@ -88,11 +87,7 @@ a {
 .settingWrapper {
     position: relative;
     display: inline-block;
-<<<<<<< HEAD
-    transition: 0.5s;
-=======
     
->>>>>>> duyyy
 }
 
 .settingBtn {
@@ -130,12 +125,10 @@ a {
     background-color: #f2f2f2;
 }
 
-<<<<<<< HEAD
-/* ------------------------------ */
-=======
+
 /* Chỉnh sáng tối */
 
->>>>>>> duyyy
+
 :global(body.dark-theme) {
     background-color: #050404;
     color: #ffffff;
@@ -143,29 +136,23 @@ a {
 }
 
 :global(body.dark-theme) header {
-<<<<<<< HEAD
     background-color: #1e1e1e;
     transition: 0.5s;
-=======
     background-color: #1e1e1e;  
->>>>>>> duyyy
 }
 
 :global(body.dark-theme) .dropdownMenu {
     background-color: #2c2c2c;
-<<<<<<< HEAD
+
     color: #fff;
     transition: 0.5s;
-=======
-    color: #fff; 
->>>>>>> duyyy
+
 }
 
 :global(body.dark-theme) .dropdownMenu div:hover {
     background-color: #3a3a3a;
     transition: 0.5s;
 }
-<<<<<<< HEAD
 
 :global(body.dark-theme) .settingBtn {
     color: white;
@@ -196,8 +183,8 @@ a {
     color: white;
     transition: 0.5s;
 }
-=======
+
 :global(body) {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
->>>>>>> duyyy
+
