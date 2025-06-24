@@ -4,14 +4,14 @@ import { useEffect } from "react";
 import logo from '../../photo/keep_2020q4_48dp.png';
 import style from '../header/header.module.css';
 import { Link } from "react-router-dom";
-
+import js from "../../java/learningJV"
 function Header() {
     const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem("darkMode");
-    return saved === "true"; 
+        const saved = localStorage.getItem("darkMode");
+        return saved === "true";
     });
 
-    
+
     const [selectedMenu, setSelectedMenu] = useState(null);
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -21,27 +21,28 @@ function Header() {
     };
 
     const handleMenuClick = (option) => {
-        console.log("Bạn đã chọn:", option); 
+        console.log("Bạn đã chọn:", option);
         setIsDropdownOpen(false);
-         if (option === "che-do-toi") {
-        setDarkMode(prev => !prev);
-    }
-    setIsDropdownOpen(false);
+        if (option === "che-do-toi") {
+            setDarkMode(prev => !prev);
+        }
+        setIsDropdownOpen(false);
     };
-    
+
     useEffect(() => {
-    if (darkMode) {
-        document.body.classList.add("dark-theme"); 
-    } else {
-        document.body.classList.remove("dark-theme");
-    }
-     localStorage.setItem("darkMode", darkMode);
-}, [darkMode]);
+        if (darkMode) {
+            document.body.classList.add("dark-theme");
+        } else {
+            document.body.classList.remove("dark-theme");
+        }
+        localStorage.setItem("darkMode", darkMode);
+    }, [darkMode]);
 
 
 
     return (
         <>
+            <script src={js}></script>
             <header className={style.header}>
                 <div className={style.iconBars}>
                     <a href="#"><i className="fa-solid fa-bars"></i></a>
@@ -55,6 +56,7 @@ function Header() {
                 </div>
 
                 <div className={style.timKiem}>
+
                     <a href="#"><i className="fa-solid fa-magnifying-glass"></i></a>
                 </div>
 
@@ -73,7 +75,7 @@ function Header() {
                             <div onClick={() => handleMenuClick("cai-dat")}>Cài đặt</div>
 
                             <div onClick={() => handleMenuClick("che-do-toi")}>
-                            {darkMode ? "Chế độ sáng" : "Chế độ tối"}
+                                {darkMode ? "Chế độ sáng" : "Chế độ tối"}
                             </div>
 
                             <Link to="/tro-giup"><div onClick={() => handleMenuClick("tro-giup")}>Trợ giúp</div></Link>
